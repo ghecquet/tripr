@@ -5,9 +5,9 @@
   "author": "Greg Hecquet <greg.tf.hecquet@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir . --ignore __tests__",
+    "build": "babel src --plugins transform-react-jsx --out-dir . --ignore __tests__",
     "prepublish": "cross-env NODE_ENV=production npm run build",
-    "watch": "babel -w src --out-dir . --ignore __tests__"
+    "watch": "babel -w src --plugins transform-react-jsx --out-dir . --ignore __tests__"
   },
   "keywords": [
     "gatsby",

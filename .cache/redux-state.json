@@ -1,0 +1,1190 @@
+{
+  "nodes": {
+    "SitePage /dev-404-page/": {
+      "layout": "index",
+      "jsonName": "dev-404-page.json",
+      "internalComponentName": "ComponentDev404Page",
+      "path": "/dev-404-page/",
+      "component": "/Users/gregory/Sites/tripr/.cache/dev-404-page.js",
+      "componentChunkName": "component---cache-dev-404-page-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin dev-404-page",
+      "pluginCreatorId": "Plugin dev-404-page",
+      "componentPath": "/Users/gregory/Sites/tripr/.cache/dev-404-page.js",
+      "id": "SitePage /dev-404-page/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "cdc8e9fd1f4b66086e043066f3d2711c",
+        "description": "Plugin dev-404-page",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin dev-404-page": {
+      "resolve": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "id": "Plugin dev-404-page",
+      "name": "dev-404-page",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/dev-404-page",
+      "packageJson": {
+        "name": "dev-404-page",
+        "description": "Internal plugin to add a 404 page in development with helpful information",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "b9b1418632a3b620cbecf5631b19011b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-page-creator": {
+      "resolve": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "id": "Plugin component-page-creator",
+      "name": "component-page-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createPagesStatefully"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/component-page-creator",
+      "packageJson": {
+        "name": "component-page-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/pages",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "16b600e7b4614271439d7408325bd9af",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin component-layout-creator": {
+      "resolve": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "id": "Plugin component-layout-creator",
+      "name": "component-layout-creator",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "createLayouts"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/component-layout-creator",
+      "packageJson": {
+        "name": "component-layout-creator",
+        "description": "An internal Gatsby plugin that creates pages from component files in src/layouts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "d57321600ce0ac9eb2c2fc0d804f8edd",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin internal-data-bridge": {
+      "resolve": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "id": "Plugin internal-data-bridge",
+      "name": "internal-data-bridge",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/internal-data-bridge",
+      "packageJson": {
+        "name": "internal-data-bridge",
+        "description": "An internal Gatsby plugin which creates data nodes from internal data",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "ec9023e3eb5155be5fdb4059c035360a",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin prod-404": {
+      "resolve": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "id": "Plugin prod-404",
+      "name": "prod-404",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/prod-404",
+      "packageJson": {
+        "name": "prod-404",
+        "description": "Internal plugin to detect various flavors of 404 pages and ensure there's a 404.html path created as well to ensure compatability with static hosts",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "02182284250f0af45d8a9b8386448fb1",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin query-runner": {
+      "resolve": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "id": "Plugin query-runner",
+      "name": "query-runner",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [
+        "onCreatePage",
+        "onCreateLayout"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/gregory/Sites/tripr/node_modules/gatsby/dist/internal-plugins/query-runner",
+      "packageJson": {
+        "name": "query-runner",
+        "description": "Internal plugin for running queries",
+        "version": "1.0.0",
+        "main": "index.js",
+        "author": "",
+        "license": "MIT",
+        "dependencies": [],
+        "devDependencies": [],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "8c832aef3db02fd4a32540af1fa7ea6b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-react-helmet": {
+      "resolve": "/Users/gregory/Sites/tripr/node_modules/gatsby-plugin-react-helmet",
+      "id": "Plugin gatsby-plugin-react-helmet",
+      "name": "gatsby-plugin-react-helmet",
+      "version": "2.0.11",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/gregory/Sites/tripr/node_modules/gatsby-plugin-react-helmet",
+      "packageJson": {
+        "name": "gatsby-plugin-react-helmet",
+        "description": "Manage document head data with react-helmet. Provides drop-in server rendering support for Gatsby.",
+        "version": "2.0.11",
+        "main": "index.js",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "favicon",
+          "react-helmet",
+          "seo",
+          "document",
+          "head",
+          "title",
+          "meta",
+          "link",
+          "script",
+          "base",
+          "noscript",
+          "style"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "matthews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "react-helmet",
+            "version": ">=5.1.3"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "2cc44726d9b830cdff2a5d90da0ac07b",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-plugin-revealjs": {
+      "resolve": "/Users/gregory/Sites/tripr/plugins/gatsby-plugin-revealjs",
+      "name": "gatsby-plugin-revealjs",
+      "id": "Plugin gatsby-plugin-revealjs",
+      "version": "1.0.0",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [
+        "onRenderBody"
+      ],
+      "pluginFilepath": "/Users/gregory/Sites/tripr/plugins/gatsby-plugin-revealjs",
+      "packageJson": {
+        "name": "gatsby-plugin-revealjs",
+        "description": "Add ability to use revealjs within Gatsby.",
+        "version": "1.0.0",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "reveal.js"
+        ],
+        "author": "Greg Hecquet <greg.tf.hecquet@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "reveal.js",
+            "version": ">=3.6.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-jest",
+            "version": "^22.4.1"
+          },
+          {
+            "name": "babel-plugin-add-module-exports",
+            "version": "^0.2.1"
+          },
+          {
+            "name": "babel-preset-env",
+            "version": "^1.6.1"
+          },
+          {
+            "name": "cross-env",
+            "version": "^5.1.3"
+          },
+          {
+            "name": "jest",
+            "version": "^22.4.2"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "6d3ae55acecb8e84b232df89d257d828",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin gatsby-source-filesystem": {
+      "resolve": "/Users/gregory/Sites/tripr/node_modules/gatsby-source-filesystem",
+      "id": "Plugin gatsby-source-filesystem",
+      "name": "gatsby-source-filesystem",
+      "version": "1.5.38",
+      "pluginOptions": {
+        "plugins": [],
+        "name": "src",
+        "path": "/Users/gregory/Sites/tripr/src/"
+      },
+      "nodeAPIs": [
+        "sourceNodes",
+        "setFieldsOnGraphQLNodeType"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/gregory/Sites/tripr/node_modules/gatsby-source-filesystem",
+      "packageJson": {
+        "name": "gatsby-source-filesystem",
+        "description": "Gatsby plugin which parses files within a directory for further parsing by other plugins",
+        "version": "1.5.38",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin"
+        ],
+        "author": {
+          "name": "Kyle Mathews",
+          "email": "mathews.kyle@gmail.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "babel-runtime",
+            "version": "^6.26.0"
+          },
+          {
+            "name": "better-queue",
+            "version": "^3.8.7"
+          },
+          {
+            "name": "bluebird",
+            "version": "^3.5.0"
+          },
+          {
+            "name": "chokidar",
+            "version": "^1.7.0"
+          },
+          {
+            "name": "fs-extra",
+            "version": "^4.0.1"
+          },
+          {
+            "name": "got",
+            "version": "^7.1.0"
+          },
+          {
+            "name": "md5-file",
+            "version": "^3.1.1"
+          },
+          {
+            "name": "mime",
+            "version": "^1.3.6"
+          },
+          {
+            "name": "pretty-bytes",
+            "version": "^4.0.2"
+          },
+          {
+            "name": "slash",
+            "version": "^1.0.0"
+          },
+          {
+            "name": "valid-url",
+            "version": "^1.0.9"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "cross-env",
+            "version": "^5.0.5"
+          }
+        ],
+        "peerDependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.250"
+          }
+        ],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "eeac1aef9faa61a54948ef682bdf31e9",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Plugin default-site-plugin": {
+      "resolve": "/Users/gregory/Sites/tripr",
+      "id": "Plugin default-site-plugin",
+      "name": "default-site-plugin",
+      "version": "081b273bb9448543a159320f494e416b",
+      "pluginOptions": {
+        "plugins": []
+      },
+      "nodeAPIs": [],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "/Users/gregory/Sites/tripr",
+      "packageJson": {
+        "name": "gatsby-starter-default",
+        "description": "Gatsby default starter",
+        "version": "1.0.0",
+        "keywords": [
+          "gatsby"
+        ],
+        "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "gatsby",
+            "version": "^1.9.247"
+          },
+          {
+            "name": "gatsby-link",
+            "version": "^1.6.40"
+          },
+          {
+            "name": "gatsby-plugin-react-helmet",
+            "version": "^2.0.10"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.5.38"
+          },
+          {
+            "name": "react-helmet",
+            "version": "^5.2.0"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "prettier",
+            "version": "^1.12.0"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "918778af34b1923f334f42b5afdec17f",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "Site": {
+      "siteMetadata": {
+        "title": "Gatsby Default Starter",
+        "revealTheme": "night",
+        "hljsTheme": "monokai-sublime"
+      },
+      "port": "8000",
+      "host": "localhost",
+      "pathPrefix": "",
+      "polyfill": true,
+      "buildTime": "2018-06-08T15:31:51.498Z",
+      "id": "Site",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "89310d62a26a4491f776e30e7b797031",
+        "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/gregory/Sites/tripr/src/ absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/ absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "477a573712a0bf83be7e7b836b279052",
+        "type": "Directory",
+        "description": "Directory \"src\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/",
+      "relativePath": "",
+      "extension": "",
+      "size": 170,
+      "prettySize": "170 B",
+      "modifiedTime": "2018-06-08T07:15:18.000Z",
+      "accessTime": "2018-06-08T15:31:56.000Z",
+      "changeTime": "2018-06-08T07:15:18.000Z",
+      "birthTime": "2018-06-08T07:15:18.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr",
+      "base": "src",
+      "ext": "",
+      "name": "src",
+      "relativeDirectory": "..",
+      "dev": 16777224,
+      "mode": 16877,
+      "nlink": 5,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13223751,
+      "blocks": 0,
+      "atimeMs": 1528471916000,
+      "mtimeMs": 1528442118000,
+      "ctimeMs": 1528442118000,
+      "birthtimeMs": 1528442118000,
+      "atime": "2018-06-08T15:31:56.000Z",
+      "mtime": "2018-06-08T07:15:18.000Z",
+      "ctime": "2018-06-08T07:15:18.000Z",
+      "birthtime": "2018-06-08T07:15:18.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/components absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/components absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d002f7a388020f8f458d734cb863bc11",
+        "type": "Directory",
+        "description": "Directory \"src/components\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/components",
+      "relativePath": "components",
+      "extension": "",
+      "size": 68,
+      "prettySize": "68 B",
+      "modifiedTime": "2018-06-08T09:59:35.000Z",
+      "accessTime": "2018-06-08T15:31:56.000Z",
+      "changeTime": "2018-06-08T09:59:35.000Z",
+      "birthTime": "2018-06-08T07:15:18.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src",
+      "base": "components",
+      "ext": "",
+      "name": "components",
+      "relativeDirectory": "",
+      "dev": 16777224,
+      "mode": 16877,
+      "nlink": 2,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13223752,
+      "blocks": 0,
+      "atimeMs": 1528471916000,
+      "mtimeMs": 1528451975000,
+      "ctimeMs": 1528451975000,
+      "birthtimeMs": 1528442118000,
+      "atime": "2018-06-08T15:31:56.000Z",
+      "mtime": "2018-06-08T09:59:35.000Z",
+      "ctime": "2018-06-08T09:59:35.000Z",
+      "birthtime": "2018-06-08T07:15:18.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/layouts absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/layouts absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "763202d787d49aca86056eeeed82214b",
+        "type": "Directory",
+        "description": "Directory \"src/layouts\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/layouts",
+      "relativePath": "layouts",
+      "extension": "",
+      "size": 136,
+      "prettySize": "136 B",
+      "modifiedTime": "2018-06-08T07:15:18.000Z",
+      "accessTime": "2018-06-08T15:31:56.000Z",
+      "changeTime": "2018-06-08T07:15:18.000Z",
+      "birthTime": "2018-06-08T07:15:18.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src",
+      "base": "layouts",
+      "ext": "",
+      "name": "layouts",
+      "relativeDirectory": "",
+      "dev": 16777224,
+      "mode": 16877,
+      "nlink": 4,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13223754,
+      "blocks": 0,
+      "atimeMs": 1528471916000,
+      "mtimeMs": 1528442118000,
+      "ctimeMs": 1528442118000,
+      "birthtimeMs": 1528442118000,
+      "atime": "2018-06-08T15:31:56.000Z",
+      "mtime": "2018-06-08T07:15:18.000Z",
+      "ctime": "2018-06-08T07:15:18.000Z",
+      "birthtime": "2018-06-08T07:15:18.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/pages absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/pages absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e50a3255b843cf7eb9cbc4ac17626697",
+        "type": "Directory",
+        "description": "Directory \"src/pages\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/pages",
+      "relativePath": "pages",
+      "extension": "",
+      "size": 204,
+      "prettySize": "204 B",
+      "modifiedTime": "2018-06-08T15:28:07.000Z",
+      "accessTime": "2018-06-08T15:31:56.000Z",
+      "changeTime": "2018-06-08T15:28:07.000Z",
+      "birthTime": "2018-06-08T07:15:18.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src",
+      "base": "pages",
+      "ext": "",
+      "name": "pages",
+      "relativeDirectory": "",
+      "dev": 16777224,
+      "mode": 16877,
+      "nlink": 6,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13223757,
+      "blocks": 0,
+      "atimeMs": 1528471916000,
+      "mtimeMs": 1528471687000,
+      "ctimeMs": 1528471687000,
+      "birthtimeMs": 1528442118000,
+      "atime": "2018-06-08T15:31:56.000Z",
+      "mtime": "2018-06-08T15:28:07.000Z",
+      "ctime": "2018-06-08T15:28:07.000Z",
+      "birthtime": "2018-06-08T07:15:18.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/pages/slides absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/pages/slides absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "611aa115048de83d55ca693f00c84754",
+        "type": "Directory",
+        "description": "Directory \"src/pages/slides\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/pages/slides",
+      "relativePath": "pages/slides",
+      "extension": "",
+      "size": 102,
+      "prettySize": "102 B",
+      "modifiedTime": "2018-06-08T15:28:17.000Z",
+      "accessTime": "2018-06-08T15:31:56.000Z",
+      "changeTime": "2018-06-08T15:28:17.000Z",
+      "birthTime": "2018-06-08T15:28:07.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/pages",
+      "base": "slides",
+      "ext": "",
+      "name": "slides",
+      "relativeDirectory": "pages",
+      "dev": 16777224,
+      "mode": 16877,
+      "nlink": 3,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13299553,
+      "blocks": 0,
+      "atimeMs": 1528471916000,
+      "mtimeMs": 1528471697000,
+      "ctimeMs": 1528471697000,
+      "birthtimeMs": 1528471687000,
+      "atime": "2018-06-08T15:31:56.000Z",
+      "mtime": "2018-06-08T15:28:17.000Z",
+      "ctime": "2018-06-08T15:28:17.000Z",
+      "birthtime": "2018-06-08T15:28:07.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/layouts/index.js absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/layouts/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "7516fc30f33dd094db658f4a5be0167c",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "description": "File \"src/layouts/index.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/layouts/index.js",
+      "relativePath": "layouts/index.js",
+      "extension": "js",
+      "size": 704,
+      "prettySize": "704 B",
+      "modifiedTime": "2018-06-08T15:29:43.000Z",
+      "accessTime": "2018-06-08T15:29:44.000Z",
+      "changeTime": "2018-06-08T15:29:43.000Z",
+      "birthTime": "2018-06-08T07:15:18.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/layouts",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "relativeDirectory": "layouts",
+      "dev": 16777224,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13223756,
+      "blocks": 8,
+      "atimeMs": 1528471784000,
+      "mtimeMs": 1528471783000,
+      "ctimeMs": 1528471783000,
+      "birthtimeMs": 1528442118000,
+      "atime": "2018-06-08T15:29:44.000Z",
+      "mtime": "2018-06-08T15:29:43.000Z",
+      "ctime": "2018-06-08T15:29:43.000Z",
+      "birthtime": "2018-06-08T07:15:18.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/pages/index.js absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/pages/index.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a7937aa55e4cd7bbb281b1d77dab7e96",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "description": "File \"src/pages/index.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/pages/index.js",
+      "relativePath": "pages/index.js",
+      "extension": "js",
+      "size": 143,
+      "prettySize": "143 B",
+      "modifiedTime": "2018-06-08T10:09:42.000Z",
+      "accessTime": "2018-06-08T15:29:44.000Z",
+      "changeTime": "2018-06-08T10:09:42.000Z",
+      "birthTime": "2018-06-08T07:15:18.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/pages",
+      "base": "index.js",
+      "ext": ".js",
+      "name": "index",
+      "relativeDirectory": "pages",
+      "dev": 16777224,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13223759,
+      "blocks": 8,
+      "atimeMs": 1528471784000,
+      "mtimeMs": 1528452582000,
+      "ctimeMs": 1528452582000,
+      "birthtimeMs": 1528442118000,
+      "atime": "2018-06-08T15:29:44.000Z",
+      "mtime": "2018-06-08T10:09:42.000Z",
+      "ctime": "2018-06-08T10:09:42.000Z",
+      "birthtime": "2018-06-08T07:15:18.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "e15db69252a208ffabb4ad694fb1a96a",
+        "mediaType": "text/jsx",
+        "type": "File",
+        "description": "File \"src/pages/slides/slide1.jsx\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx",
+      "relativePath": "pages/slides/slide1.jsx",
+      "extension": "jsx",
+      "size": 77,
+      "prettySize": "77 B",
+      "modifiedTime": "2018-06-08T15:28:37.000Z",
+      "accessTime": "2018-06-08T15:30:01.000Z",
+      "changeTime": "2018-06-08T15:28:37.000Z",
+      "birthTime": "2018-06-08T15:28:17.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/pages/slides",
+      "base": "slide1.jsx",
+      "ext": ".jsx",
+      "name": "slide1",
+      "relativeDirectory": "pages/slides",
+      "dev": 16777224,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13299556,
+      "blocks": 8,
+      "atimeMs": 1528471801000,
+      "mtimeMs": 1528471717000,
+      "ctimeMs": 1528471717000,
+      "birthtimeMs": 1528471697000,
+      "atime": "2018-06-08T15:30:01.000Z",
+      "mtime": "2018-06-08T15:28:37.000Z",
+      "ctime": "2018-06-08T15:28:37.000Z",
+      "birthtime": "2018-06-08T15:28:17.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/layouts/index.css absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/layouts/index.css absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "eed8cf4192a217bf249ac4765c7dd68e",
+        "mediaType": "text/css",
+        "type": "File",
+        "description": "File \"src/layouts/index.css\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/layouts/index.css",
+      "relativePath": "layouts/index.css",
+      "extension": "css",
+      "size": 11244,
+      "prettySize": "11.2 kB",
+      "modifiedTime": "2018-06-08T07:15:18.000Z",
+      "accessTime": "2018-06-08T10:00:47.000Z",
+      "changeTime": "2018-06-08T07:15:18.000Z",
+      "birthTime": "2018-06-08T07:15:18.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/layouts",
+      "base": "index.css",
+      "ext": ".css",
+      "name": "index",
+      "relativeDirectory": "layouts",
+      "dev": 16777224,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13223755,
+      "blocks": 24,
+      "atimeMs": 1528452047000,
+      "mtimeMs": 1528442118000,
+      "ctimeMs": 1528442118000,
+      "birthtimeMs": 1528442118000,
+      "atime": "2018-06-08T10:00:47.000Z",
+      "mtime": "2018-06-08T07:15:18.000Z",
+      "ctime": "2018-06-08T07:15:18.000Z",
+      "birthtime": "2018-06-08T07:15:18.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/pages/404.js absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/pages/404.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "8d50d9a7e3f04ddcc5ff8d43b6effe79",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "description": "File \"src/pages/404.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/pages/404.js",
+      "relativePath": "pages/404.js",
+      "extension": "js",
+      "size": 198,
+      "prettySize": "198 B",
+      "modifiedTime": "2018-06-08T07:15:18.000Z",
+      "accessTime": "2018-06-08T15:29:43.000Z",
+      "changeTime": "2018-06-08T07:15:18.000Z",
+      "birthTime": "2018-06-08T07:15:18.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/pages",
+      "base": "404.js",
+      "ext": ".js",
+      "name": "404",
+      "relativeDirectory": "pages",
+      "dev": 16777224,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13223758,
+      "blocks": 8,
+      "atimeMs": 1528471783000,
+      "mtimeMs": 1528442118000,
+      "ctimeMs": 1528442118000,
+      "birthtimeMs": 1528442118000,
+      "atime": "2018-06-08T15:29:43.000Z",
+      "mtime": "2018-06-08T07:15:18.000Z",
+      "ctime": "2018-06-08T07:15:18.000Z",
+      "birthtime": "2018-06-08T07:15:18.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/pages/page-2.js absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/pages/page-2.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "eda91bb7e277753793f385583265fbf5",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "description": "File \"src/pages/page-2.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/pages/page-2.js",
+      "relativePath": "pages/page-2.js",
+      "extension": "js",
+      "size": 245,
+      "prettySize": "245 B",
+      "modifiedTime": "2018-06-08T07:15:18.000Z",
+      "accessTime": "2018-06-08T15:29:43.000Z",
+      "changeTime": "2018-06-08T07:15:18.000Z",
+      "birthTime": "2018-06-08T07:15:18.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/pages",
+      "base": "page-2.js",
+      "ext": ".js",
+      "name": "page-2",
+      "relativeDirectory": "pages",
+      "dev": 16777224,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13223760,
+      "blocks": 8,
+      "atimeMs": 1528471783000,
+      "mtimeMs": 1528442118000,
+      "ctimeMs": 1528442118000,
+      "birthtimeMs": 1528442118000,
+      "atime": "2018-06-08T15:29:43.000Z",
+      "mtime": "2018-06-08T07:15:18.000Z",
+      "ctime": "2018-06-08T07:15:18.000Z",
+      "birthtime": "2018-06-08T07:15:18.000Z"
+    },
+    "SitePage /404/": {
+      "layout": "index",
+      "jsonName": "404.json",
+      "internalComponentName": "Component404",
+      "path": "/404/",
+      "component": "/Users/gregory/Sites/tripr/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/gregory/Sites/tripr/src/pages/404.js",
+      "id": "SitePage /404/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "1b40fe08d883d2f907a3f35efd964a18",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /": {
+      "layout": "index",
+      "jsonName": "index.json",
+      "internalComponentName": "ComponentIndex",
+      "path": "/",
+      "component": "/Users/gregory/Sites/tripr/src/pages/index.js",
+      "componentChunkName": "component---src-pages-index-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/gregory/Sites/tripr/src/pages/index.js",
+      "id": "SitePage /",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "969138ab5fa20823013adc6f78e40816",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /page-2/": {
+      "layout": "index",
+      "jsonName": "page-2.json",
+      "internalComponentName": "ComponentPage2",
+      "path": "/page-2/",
+      "component": "/Users/gregory/Sites/tripr/src/pages/page-2.js",
+      "componentChunkName": "component---src-pages-page-2-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/gregory/Sites/tripr/src/pages/page-2.js",
+      "id": "SitePage /page-2/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "431b7e70a2de07b4919b16cd00f74cb0",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /slides/slide1/": {
+      "layout": "index",
+      "jsonName": "slides-slide-1.json",
+      "internalComponentName": "ComponentSlidesSlide1",
+      "path": "/slides/slide1/",
+      "component": "/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx",
+      "componentChunkName": "component---src-pages-slides-slide-1-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx",
+      "id": "SitePage /slides/slide1/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c848fe911b62ce5e2c7becd32ba75f70",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /404.html": {
+      "layout": "index",
+      "jsonName": "404-html.json",
+      "internalComponentName": "Component404Html",
+      "path": "/404.html",
+      "component": "/Users/gregory/Sites/tripr/src/pages/404.js",
+      "componentChunkName": "component---src-pages-404-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin prod-404",
+      "pluginCreatorId": "Plugin prod-404",
+      "componentPath": "/Users/gregory/Sites/tripr/src/pages/404.js",
+      "id": "SitePage /404.html",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "a4e1774bf7bb2b3b075a8d2557c347ed",
+        "description": "Plugin prod-404",
+        "owner": "internal-data-bridge"
+      }
+    }
+  },
+  "status": {
+    "plugins": {},
+    "PLUGINS_HASH": "3e8ada6bf6eea40146eb569684e2ecea"
+  },
+  "componentDataDependencies": {
+    "nodes": {
+      "Site": [
+        "LAYOUT___index"
+      ]
+    },
+    "connections": {
+      "SitePage": [
+        "/dev-404-page/"
+      ]
+    }
+  }
+}

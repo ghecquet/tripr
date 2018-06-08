@@ -1,12 +1,16 @@
-import React from "react";
-import { stripIndent } from "common-tags";
+import React from "react"
+import { stripIndent } from "common-tags"
+
 
 exports.onRenderBody = ({ setPreBodyComponents, setPostBodyComponents }, pluginOptions) => {
-				setPreBodyComponents([React.createElement("link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" }), React.createElement("link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/beige.min.css" })]);
+    setPreBodyComponents([
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" />,
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/beige.min.css" />
+    ])
 
-				const getScript = () => {
-								return {
-												__html: `
+    const getScript = () => {
+        return {
+            __html: `
                 window.onload = function () {
                     console.log('HERE');
                     Reveal.initialize({
@@ -130,8 +134,11 @@ exports.onRenderBody = ({ setPreBodyComponents, setPostBodyComponents }, pluginO
 });
 }
             `
-								};
-				};
+        }
+    }
 
-				setPostBodyComponents([React.createElement("script", { src: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js" }), React.createElement("script", { dangerouslySetInnerHTML: getScript() })]);
-};
+    setPostBodyComponents([
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/js/reveal.min.js"></script>,
+        <script dangerouslySetInnerHTML={getScript()}/>
+    ])
+}
