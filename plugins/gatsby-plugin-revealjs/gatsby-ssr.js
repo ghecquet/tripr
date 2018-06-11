@@ -2,13 +2,14 @@ import React from "react";
 import { stripIndent } from "common-tags";
 
 exports.onRenderBody = ({ setPreBodyComponents, setPostBodyComponents }, pluginOptions) => {
-				setPreBodyComponents([React.createElement("link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" }), React.createElement("link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/beige.min.css" })]);
+				setPreBodyComponents([React.createElement("link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" }), React.createElement("link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/beige.min.css" }), React.createElement("link", { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.css" })]);
 
 				const getScript = () => {
 								return {
 												__html: `
                 window.onload = function () {
                     console.log('HERE');
+                    return
                     Reveal.initialize({
 
 	// Display presentation control arrows

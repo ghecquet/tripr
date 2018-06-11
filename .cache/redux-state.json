@@ -16,7 +16,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "cdc8e9fd1f4b66086e043066f3d2711c",
+        "contentDigest": "139ff0eb2b4f31bce6170b95a2c56c41",
         "description": "Plugin dev-404-page",
         "owner": "internal-data-bridge"
       }
@@ -565,12 +565,12 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-06-08T15:31:51.498Z",
+      "buildTime": "2018-06-11T07:52:53.716Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "89310d62a26a4491f776e30e7b797031",
+        "contentDigest": "faa199bfaad551c0c63701b10bab1d43",
         "type": "Site",
         "owner": "internal-data-bridge"
       }
@@ -580,7 +580,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "477a573712a0bf83be7e7b836b279052",
+        "contentDigest": "0cecb1b5b9289cf232f5d11d6359f203",
         "type": "Directory",
         "description": "Directory \"src\"",
         "owner": "gatsby-source-filesystem"
@@ -592,7 +592,7 @@
       "size": 170,
       "prettySize": "170 B",
       "modifiedTime": "2018-06-08T07:15:18.000Z",
-      "accessTime": "2018-06-08T15:31:56.000Z",
+      "accessTime": "2018-06-11T07:52:57.000Z",
       "changeTime": "2018-06-08T07:15:18.000Z",
       "birthTime": "2018-06-08T07:15:18.000Z",
       "root": "/",
@@ -610,11 +610,11 @@
       "blksize": 4096,
       "ino": 13223751,
       "blocks": 0,
-      "atimeMs": 1528471916000,
+      "atimeMs": 1528703577000,
       "mtimeMs": 1528442118000,
       "ctimeMs": 1528442118000,
       "birthtimeMs": 1528442118000,
-      "atime": "2018-06-08T15:31:56.000Z",
+      "atime": "2018-06-11T07:52:57.000Z",
       "mtime": "2018-06-08T07:15:18.000Z",
       "ctime": "2018-06-08T07:15:18.000Z",
       "birthtime": "2018-06-08T07:15:18.000Z"
@@ -624,7 +624,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "d002f7a388020f8f458d734cb863bc11",
+        "contentDigest": "f792899e3c81988b962f4bd462ee9924",
         "type": "Directory",
         "description": "Directory \"src/components\"",
         "owner": "gatsby-source-filesystem"
@@ -635,9 +635,9 @@
       "extension": "",
       "size": 68,
       "prettySize": "68 B",
-      "modifiedTime": "2018-06-08T09:59:35.000Z",
-      "accessTime": "2018-06-08T15:31:56.000Z",
-      "changeTime": "2018-06-08T09:59:35.000Z",
+      "modifiedTime": "2018-06-11T07:46:33.000Z",
+      "accessTime": "2018-06-11T07:52:57.000Z",
+      "changeTime": "2018-06-11T07:46:33.000Z",
       "birthTime": "2018-06-08T07:15:18.000Z",
       "root": "/",
       "dir": "/Users/gregory/Sites/tripr/src",
@@ -654,13 +654,13 @@
       "blksize": 4096,
       "ino": 13223752,
       "blocks": 0,
-      "atimeMs": 1528471916000,
-      "mtimeMs": 1528451975000,
-      "ctimeMs": 1528451975000,
+      "atimeMs": 1528703577000,
+      "mtimeMs": 1528703193000,
+      "ctimeMs": 1528703193000,
       "birthtimeMs": 1528442118000,
-      "atime": "2018-06-08T15:31:56.000Z",
-      "mtime": "2018-06-08T09:59:35.000Z",
-      "ctime": "2018-06-08T09:59:35.000Z",
+      "atime": "2018-06-11T07:52:57.000Z",
+      "mtime": "2018-06-11T07:46:33.000Z",
+      "ctime": "2018-06-11T07:46:33.000Z",
       "birthtime": "2018-06-08T07:15:18.000Z"
     },
     "/Users/gregory/Sites/tripr/src/layouts absPath of file": {
@@ -668,7 +668,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "763202d787d49aca86056eeeed82214b",
+        "contentDigest": "ccfaf61f648f90d6e4470d9acb369045",
         "type": "Directory",
         "description": "Directory \"src/layouts\"",
         "owner": "gatsby-source-filesystem"
@@ -679,9 +679,9 @@
       "extension": "",
       "size": 136,
       "prettySize": "136 B",
-      "modifiedTime": "2018-06-08T07:15:18.000Z",
-      "accessTime": "2018-06-08T15:31:56.000Z",
-      "changeTime": "2018-06-08T07:15:18.000Z",
+      "modifiedTime": "2018-06-11T07:52:00.000Z",
+      "accessTime": "2018-06-11T07:52:57.000Z",
+      "changeTime": "2018-06-11T07:52:00.000Z",
       "birthTime": "2018-06-08T07:15:18.000Z",
       "root": "/",
       "dir": "/Users/gregory/Sites/tripr/src",
@@ -698,13 +698,13 @@
       "blksize": 4096,
       "ino": 13223754,
       "blocks": 0,
-      "atimeMs": 1528471916000,
-      "mtimeMs": 1528442118000,
-      "ctimeMs": 1528442118000,
+      "atimeMs": 1528703577000,
+      "mtimeMs": 1528703520000,
+      "ctimeMs": 1528703520000,
       "birthtimeMs": 1528442118000,
-      "atime": "2018-06-08T15:31:56.000Z",
-      "mtime": "2018-06-08T07:15:18.000Z",
-      "ctime": "2018-06-08T07:15:18.000Z",
+      "atime": "2018-06-11T07:52:57.000Z",
+      "mtime": "2018-06-11T07:52:00.000Z",
+      "ctime": "2018-06-11T07:52:00.000Z",
       "birthtime": "2018-06-08T07:15:18.000Z"
     },
     "/Users/gregory/Sites/tripr/src/pages absPath of file": {
@@ -712,7 +712,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "e50a3255b843cf7eb9cbc4ac17626697",
+        "contentDigest": "58f5dc8f7cd053075269885259ce6c78",
         "type": "Directory",
         "description": "Directory \"src/pages\"",
         "owner": "gatsby-source-filesystem"
@@ -724,7 +724,7 @@
       "size": 204,
       "prettySize": "204 B",
       "modifiedTime": "2018-06-08T15:28:07.000Z",
-      "accessTime": "2018-06-08T15:31:56.000Z",
+      "accessTime": "2018-06-11T07:52:57.000Z",
       "changeTime": "2018-06-08T15:28:07.000Z",
       "birthTime": "2018-06-08T07:15:18.000Z",
       "root": "/",
@@ -742,11 +742,11 @@
       "blksize": 4096,
       "ino": 13223757,
       "blocks": 0,
-      "atimeMs": 1528471916000,
+      "atimeMs": 1528703577000,
       "mtimeMs": 1528471687000,
       "ctimeMs": 1528471687000,
       "birthtimeMs": 1528442118000,
-      "atime": "2018-06-08T15:31:56.000Z",
+      "atime": "2018-06-11T07:52:57.000Z",
       "mtime": "2018-06-08T15:28:07.000Z",
       "ctime": "2018-06-08T15:28:07.000Z",
       "birthtime": "2018-06-08T07:15:18.000Z"
@@ -756,7 +756,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "611aa115048de83d55ca693f00c84754",
+        "contentDigest": "f27a68085cbf26f1da7bdd22ff8a2dc1",
         "type": "Directory",
         "description": "Directory \"src/pages/slides\"",
         "owner": "gatsby-source-filesystem"
@@ -768,7 +768,7 @@
       "size": 102,
       "prettySize": "102 B",
       "modifiedTime": "2018-06-08T15:28:17.000Z",
-      "accessTime": "2018-06-08T15:31:56.000Z",
+      "accessTime": "2018-06-11T07:52:57.000Z",
       "changeTime": "2018-06-08T15:28:17.000Z",
       "birthTime": "2018-06-08T15:28:07.000Z",
       "root": "/",
@@ -786,11 +786,11 @@
       "blksize": 4096,
       "ino": 13299553,
       "blocks": 0,
-      "atimeMs": 1528471916000,
+      "atimeMs": 1528703577000,
       "mtimeMs": 1528471697000,
       "ctimeMs": 1528471697000,
       "birthtimeMs": 1528471687000,
-      "atime": "2018-06-08T15:31:56.000Z",
+      "atime": "2018-06-11T07:52:57.000Z",
       "mtime": "2018-06-08T15:28:17.000Z",
       "ctime": "2018-06-08T15:28:17.000Z",
       "birthtime": "2018-06-08T15:28:07.000Z"
@@ -800,7 +800,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "7516fc30f33dd094db658f4a5be0167c",
+        "contentDigest": "e9bdcb1561da54855edecb2f5f04ac60",
         "mediaType": "application/javascript",
         "type": "File",
         "description": "File \"src/layouts/index.js\"",
@@ -810,11 +810,11 @@
       "absolutePath": "/Users/gregory/Sites/tripr/src/layouts/index.js",
       "relativePath": "layouts/index.js",
       "extension": "js",
-      "size": 704,
-      "prettySize": "704 B",
-      "modifiedTime": "2018-06-08T15:29:43.000Z",
-      "accessTime": "2018-06-08T15:29:44.000Z",
-      "changeTime": "2018-06-08T15:29:43.000Z",
+      "size": 603,
+      "prettySize": "603 B",
+      "modifiedTime": "2018-06-11T13:08:29.000Z",
+      "accessTime": "2018-06-11T13:08:29.000Z",
+      "changeTime": "2018-06-11T13:08:29.000Z",
       "birthTime": "2018-06-08T07:15:18.000Z",
       "root": "/",
       "dir": "/Users/gregory/Sites/tripr/src/layouts",
@@ -831,13 +831,13 @@
       "blksize": 4096,
       "ino": 13223756,
       "blocks": 8,
-      "atimeMs": 1528471784000,
-      "mtimeMs": 1528471783000,
-      "ctimeMs": 1528471783000,
+      "atimeMs": 1528722509000,
+      "mtimeMs": 1528722509000,
+      "ctimeMs": 1528722509000,
       "birthtimeMs": 1528442118000,
-      "atime": "2018-06-08T15:29:44.000Z",
-      "mtime": "2018-06-08T15:29:43.000Z",
-      "ctime": "2018-06-08T15:29:43.000Z",
+      "atime": "2018-06-11T13:08:29.000Z",
+      "mtime": "2018-06-11T13:08:29.000Z",
+      "ctime": "2018-06-11T13:08:29.000Z",
       "birthtime": "2018-06-08T07:15:18.000Z"
     },
     "/Users/gregory/Sites/tripr/src/pages/index.js absPath of file": {
@@ -845,7 +845,7 @@
       "children": [],
       "parent": "___SOURCE___",
       "internal": {
-        "contentDigest": "a7937aa55e4cd7bbb281b1d77dab7e96",
+        "contentDigest": "a693538b3843f979ba09805a8005c196",
         "mediaType": "application/javascript",
         "type": "File",
         "description": "File \"src/pages/index.js\"",
@@ -855,11 +855,11 @@
       "absolutePath": "/Users/gregory/Sites/tripr/src/pages/index.js",
       "relativePath": "pages/index.js",
       "extension": "js",
-      "size": 143,
-      "prettySize": "143 B",
-      "modifiedTime": "2018-06-08T10:09:42.000Z",
-      "accessTime": "2018-06-08T15:29:44.000Z",
-      "changeTime": "2018-06-08T10:09:42.000Z",
+      "size": 268,
+      "prettySize": "268 B",
+      "modifiedTime": "2018-06-11T13:08:06.000Z",
+      "accessTime": "2018-06-11T13:08:06.000Z",
+      "changeTime": "2018-06-11T13:08:06.000Z",
       "birthTime": "2018-06-08T07:15:18.000Z",
       "root": "/",
       "dir": "/Users/gregory/Sites/tripr/src/pages",
@@ -876,13 +876,13 @@
       "blksize": 4096,
       "ino": 13223759,
       "blocks": 8,
-      "atimeMs": 1528471784000,
-      "mtimeMs": 1528452582000,
-      "ctimeMs": 1528452582000,
+      "atimeMs": 1528722486000,
+      "mtimeMs": 1528722486000,
+      "ctimeMs": 1528722486000,
       "birthtimeMs": 1528442118000,
-      "atime": "2018-06-08T15:29:44.000Z",
-      "mtime": "2018-06-08T10:09:42.000Z",
-      "ctime": "2018-06-08T10:09:42.000Z",
+      "atime": "2018-06-11T13:08:06.000Z",
+      "mtime": "2018-06-11T13:08:06.000Z",
+      "ctime": "2018-06-11T13:08:06.000Z",
       "birthtime": "2018-06-08T07:15:18.000Z"
     },
     "/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx absPath of file": {
@@ -1081,7 +1081,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "1b40fe08d883d2f907a3f35efd964a18",
+        "contentDigest": "9b358b51e0ef4fca08196176f3928972",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -1102,7 +1102,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "969138ab5fa20823013adc6f78e40816",
+        "contentDigest": "5d1a9dea6aa8316fc719892cdf64a026",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -1123,7 +1123,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "431b7e70a2de07b4919b16cd00f74cb0",
+        "contentDigest": "cb40bde8438d605567ad6294c623510f",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -1144,7 +1144,7 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "c848fe911b62ce5e2c7becd32ba75f70",
+        "contentDigest": "3ba89519ba75ac326b30d83f52f45490",
         "description": "Plugin component-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -1165,10 +1165,166 @@
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "a4e1774bf7bb2b3b075a8d2557c347ed",
+        "contentDigest": "d23d55d3331aee36a8c3e815970791f8",
         "description": "Plugin prod-404",
         "owner": "internal-data-bridge"
       }
+    },
+    "SitePage /slides/slide2/": {
+      "layout": "index",
+      "jsonName": "slides-slide-2.json",
+      "internalComponentName": "ComponentSlidesSlide2",
+      "path": "/slides/slide2/",
+      "component": "/Users/gregory/Sites/tripr/src/pages/slides/slide2.jsx",
+      "componentChunkName": "component---src-pages-slides-slide-2-jsx",
+      "context": {},
+      "pluginCreator___NODE": "Plugin component-page-creator",
+      "pluginCreatorId": "Plugin component-page-creator",
+      "componentPath": "/Users/gregory/Sites/tripr/src/pages/slides/slide2.jsx",
+      "id": "SitePage /slides/slide2/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "3b95c64342caaed121d88a72e02d4389",
+        "description": "Plugin component-page-creator",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "/Users/gregory/Sites/tripr/src/pages/slides/slide2.jsx absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/pages/slides/slide2.jsx absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "d41d8cd98f00b204e9800998ecf8427e",
+        "mediaType": "text/jsx",
+        "type": "File",
+        "description": "File \"src/pages/slides/slide2.jsx\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/pages/slides/slide2.jsx",
+      "relativePath": "pages/slides/slide2.jsx",
+      "extension": "jsx",
+      "size": 0,
+      "prettySize": "0 B",
+      "modifiedTime": "2018-06-11T08:02:39.000Z",
+      "accessTime": "2018-06-11T08:02:39.000Z",
+      "changeTime": "2018-06-11T08:02:39.000Z",
+      "birthTime": "2018-06-11T08:02:39.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/pages/slides",
+      "base": "slide2.jsx",
+      "ext": ".jsx",
+      "name": "slide2",
+      "relativeDirectory": "pages/slides",
+      "dev": 16777224,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13303653,
+      "blocks": 0,
+      "atimeMs": 1528704159000,
+      "mtimeMs": 1528704159000,
+      "ctimeMs": 1528704159000,
+      "birthtimeMs": 1528704159000,
+      "atime": "2018-06-11T08:02:39.000Z",
+      "mtime": "2018-06-11T08:02:39.000Z",
+      "ctime": "2018-06-11T08:02:39.000Z",
+      "birthtime": "2018-06-11T08:02:39.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/components/Swiper.js absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/components/Swiper.js absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "ac2edcaf37f26e4b421e4af30eee12c1",
+        "mediaType": "application/javascript",
+        "type": "File",
+        "description": "File \"src/components/Swiper.js\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/components/Swiper.js",
+      "relativePath": "components/Swiper.js",
+      "extension": "js",
+      "size": 295,
+      "prettySize": "295 B",
+      "modifiedTime": "2018-06-11T13:14:36.000Z",
+      "accessTime": "2018-06-11T13:14:36.000Z",
+      "changeTime": "2018-06-11T13:14:36.000Z",
+      "birthTime": "2018-06-11T10:52:30.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/components",
+      "base": "Swiper.js",
+      "ext": ".js",
+      "name": "Swiper",
+      "relativeDirectory": "components",
+      "dev": 16777224,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13308356,
+      "blocks": 8,
+      "atimeMs": 1528722876000,
+      "mtimeMs": 1528722876000,
+      "ctimeMs": 1528722876000,
+      "birthtimeMs": 1528714350000,
+      "atime": "2018-06-11T13:14:36.000Z",
+      "mtime": "2018-06-11T13:14:36.000Z",
+      "ctime": "2018-06-11T13:14:36.000Z",
+      "birthtime": "2018-06-11T10:52:30.000Z"
+    },
+    "/Users/gregory/Sites/tripr/src/components/swiper.module.css absPath of file": {
+      "id": "/Users/gregory/Sites/tripr/src/components/swiper.module.css absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "0922efe8b1b0a526751d52ad15b84b94",
+        "mediaType": "text/css",
+        "type": "File",
+        "description": "File \"src/components/swiper.module.css\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "src",
+      "absolutePath": "/Users/gregory/Sites/tripr/src/components/swiper.module.css",
+      "relativePath": "components/swiper.module.css",
+      "extension": "css",
+      "size": 50,
+      "prettySize": "50 B",
+      "modifiedTime": "2018-06-11T13:02:35.000Z",
+      "accessTime": "2018-06-11T13:02:35.000Z",
+      "changeTime": "2018-06-11T13:02:35.000Z",
+      "birthTime": "2018-06-11T12:40:40.000Z",
+      "root": "/",
+      "dir": "/Users/gregory/Sites/tripr/src/components",
+      "base": "swiper.module.css",
+      "ext": ".css",
+      "name": "swiper.module",
+      "relativeDirectory": "components",
+      "dev": 16777224,
+      "mode": 33188,
+      "nlink": 1,
+      "uid": 501,
+      "gid": 20,
+      "rdev": 0,
+      "blksize": 4096,
+      "ino": 13310430,
+      "blocks": 8,
+      "atimeMs": 1528722155000,
+      "mtimeMs": 1528722155000,
+      "ctimeMs": 1528722155000,
+      "birthtimeMs": 1528720840000,
+      "atime": "2018-06-11T13:02:35.000Z",
+      "mtime": "2018-06-11T13:02:35.000Z",
+      "ctime": "2018-06-11T13:02:35.000Z",
+      "birthtime": "2018-06-11T12:40:40.000Z"
     }
   },
   "status": {
@@ -1178,12 +1334,17 @@
   "componentDataDependencies": {
     "nodes": {
       "Site": [
-        "LAYOUT___index"
+        "LAYOUT___index",
+        "LAYOUT___slides"
       ]
     },
     "connections": {
       "SitePage": [
         "/dev-404-page/"
+      ],
+      "File": [
+        "LAYOUT___slides",
+        "LAYOUT___index"
       ]
     }
   }

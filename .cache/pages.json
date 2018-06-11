@@ -40,5 +40,12 @@
         "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "404-html.json",
         "path": "/404.html"
+    },
+    {
+        "componentChunkName": "component---src-pages-slides-slide-2-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "slides-slide-2.json",
+        "path": "/slides/slide2/"
     }
 ]

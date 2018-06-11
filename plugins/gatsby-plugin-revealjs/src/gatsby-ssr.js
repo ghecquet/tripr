@@ -5,7 +5,8 @@ import { stripIndent } from "common-tags"
 exports.onRenderBody = ({ setPreBodyComponents, setPostBodyComponents }, pluginOptions) => {
     setPreBodyComponents([
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/reveal.min.css" />,
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/beige.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0/css/theme/beige.min.css" />,
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.css" />
     ])
 
     const getScript = () => {
@@ -13,6 +14,7 @@ exports.onRenderBody = ({ setPreBodyComponents, setPostBodyComponents }, pluginO
             __html: `
                 window.onload = function () {
                     console.log('HERE');
+                    return
                     Reveal.initialize({
 
 	// Display presentation control arrows

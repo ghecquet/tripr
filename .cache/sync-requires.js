@@ -11,7 +11,8 @@ exports.components = {
   "component---src-pages-404-js": preferDefault(require("/Users/gregory/Sites/tripr/src/pages/404.js")),
   "component---src-pages-index-js": preferDefault(require("/Users/gregory/Sites/tripr/src/pages/index.js")),
   "component---src-pages-page-2-js": preferDefault(require("/Users/gregory/Sites/tripr/src/pages/page-2.js")),
-  "component---src-pages-slides-slide-1-jsx": preferDefault(require("/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx"))
+  "component---src-pages-slides-slide-1-jsx": preferDefault(require("/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx")),
+  "component---src-pages-slides-slide-2-jsx": preferDefault(require("/Users/gregory/Sites/tripr/src/pages/slides/slide2.jsx"))
 }
 
 exports.json = {
@@ -21,5 +22,6 @@ exports.json = {
   "index.json": require("/Users/gregory/Sites/tripr/.cache/json/index.json"),
   "page-2.json": require("/Users/gregory/Sites/tripr/.cache/json/page-2.json"),
   "slides-slide-1.json": require("/Users/gregory/Sites/tripr/.cache/json/slides-slide-1.json"),
-  "404-html.json": require("/Users/gregory/Sites/tripr/.cache/json/404-html.json")
+  "404-html.json": require("/Users/gregory/Sites/tripr/.cache/json/404-html.json"),
+  "slides-slide-2.json": require("/Users/gregory/Sites/tripr/.cache/json/slides-slide-2.json")
 }

@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import './index.css'
 
 const Layout = ({ children, data }) => (
-  <div className="reveal" style={{position: 'fixed'}}>
+  <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
@@ -14,11 +14,8 @@ const Layout = ({ children, data }) => (
       ]}
     >
     </Helmet>
-    <div
-        className="slides"
-    >
-      {children()}
-    </div>
+
+    {children()}
   </div>
 )
 

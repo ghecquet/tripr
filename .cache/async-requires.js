@@ -6,7 +6,8 @@ exports.components = {
   "component---src-pages-404-js": require("gatsby-module-loader?name=component---src-pages-404-js!/Users/gregory/Sites/tripr/src/pages/404.js"),
   "component---src-pages-index-js": require("gatsby-module-loader?name=component---src-pages-index-js!/Users/gregory/Sites/tripr/src/pages/index.js"),
   "component---src-pages-page-2-js": require("gatsby-module-loader?name=component---src-pages-page-2-js!/Users/gregory/Sites/tripr/src/pages/page-2.js"),
-  "component---src-pages-slides-slide-1-jsx": require("gatsby-module-loader?name=component---src-pages-slides-slide-1-jsx!/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx")
+  "component---src-pages-slides-slide-1-jsx": require("gatsby-module-loader?name=component---src-pages-slides-slide-1-jsx!/Users/gregory/Sites/tripr/src/pages/slides/slide1.jsx"),
+  "component---src-pages-slides-slide-2-jsx": require("gatsby-module-loader?name=component---src-pages-slides-slide-2-jsx!/Users/gregory/Sites/tripr/src/pages/slides/slide2.jsx")
 }
 
 exports.json = {
@@ -16,7 +17,8 @@ exports.json = {
   "index.json": require("gatsby-module-loader?name=path---index!/Users/gregory/Sites/tripr/.cache/json/index.json"),
   "page-2.json": require("gatsby-module-loader?name=path---page-2!/Users/gregory/Sites/tripr/.cache/json/page-2.json"),
   "slides-slide-1.json": require("gatsby-module-loader?name=path---slides-slide-1!/Users/gregory/Sites/tripr/.cache/json/slides-slide-1.json"),
-  "404-html.json": require("gatsby-module-loader?name=path---404-html!/Users/gregory/Sites/tripr/.cache/json/404-html.json")
+  "404-html.json": require("gatsby-module-loader?name=path---404-html!/Users/gregory/Sites/tripr/.cache/json/404-html.json"),
+  "slides-slide-2.json": require("gatsby-module-loader?name=path---slides-slide-2!/Users/gregory/Sites/tripr/.cache/json/slides-slide-2.json")
 }
 
 exports.layouts = {
