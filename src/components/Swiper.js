@@ -1,13 +1,11 @@
 import React from 'react'
-import Swiper from 'react-id-swiper';
+import ReactSwipe from 'react-swipe';
 import styles from "./swiper.module.css";
 
 export default () => (
-    <Swiper>
-        <div>Slide 1</div>
-        <div>Slide 2</div>
-        <div>Slide 3</div>
-        <div>Slide 4</div>
-        <div>Slide 5</div>
-    </Swiper>
+    <ReactSwipe className={styles.mySwipe} swipeOptions={{continuous: false}}>
+        <div><div className={styles.mySwipeItem}>PANE 1</div></div>
+        <div><div className={styles.mySwipeItem}>PANE 2</div></div>
+        <div><div className={styles.mySwipeItem}>PANE 3</div></div>
+    </ReactSwipe>
 );

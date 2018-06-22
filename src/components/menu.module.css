@@ -1,0 +1,96 @@
+.section {
+    display: flex !important;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.items {
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+
+.menuRight {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.menuRightItem {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.active {
+    transform: translate3d(-800px,-120px,0)
+}
+
+/* Position and sizing of burger button */
+.bmBurgerButton {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bmBurgerBars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bmCrossButton {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bmCross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bmMenu {
+  background: #373a47;
+  /*padding: 2.5em 1.5em 0;*/
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bmMorphShape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bmItemList {
+  color: #b8b7ad;
+  /*padding: 0.8em;*/
+}
+
+/* Individual item */
+.bmItem {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bmOverlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.fullPageDisplay {
+    transition: all 400ms ease-out !important;
+    transform: translate3d(0, 0, 0) !important
+}
+
+.fullPageHide {
+    transform: translate3d(-100%, 0, 0) !important
+}

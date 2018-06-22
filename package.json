@@ -8,8 +8,12 @@
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-source-filesystem": "^1.5.38",
+    "react-burger-menu": "^2.5.2",
+    "react-fullpage": "^0.1.18",
     "react-helmet": "^5.2.0",
-    "react-id-swiper": "^1.6.4"
+    "react-id-swiper": "^1.6.4",
+    "react-swipe": "^5.1.1",
+    "react-transition-group": "^2.3.1"
   },
   "keywords": [
     "gatsby"
