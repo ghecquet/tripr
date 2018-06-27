@@ -2,7 +2,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 import Swiper from '../components/swiper'
 import Menu from '../components/menu'
-import {SectionsContainer, Section, Header, Footer} from 'react-fullpage';
+import {SectionsContainer, Section, Footer} from 'react-fullpage';
+import Header from '../components/Header';
+import Auth from '../containers/Auth';
 
 let options = {
     sectionClassName:     'section',
@@ -14,16 +16,25 @@ let options = {
 };
 
 const IndexPage = () => (
-    <div id="outer-container">
-        <SectionsContainer className="container" {...options}>
-            <Header>
-                <Menu />
-            </Header>
-            <Section id="page-wrap" color="#FFFFFF">
-                <Swiper />
-            </Section>
-        </SectionsContainer>
-    </div>
-)
+    <Auth>
+    {auth => {
+      return (
+        <div id="outer-container">
+            <Header
+                background="background-image: linear-gradient(116deg, #08AEEA 0%, #2AF598 100%)"
+                title={"test"}
+                {...auth}
+            />
+            <Menu />
+            <SectionsContainer className="container" {...options}>
+                <Section id="page-wrap" color="#FFFFFF">
+                    <Swiper />
+                </Section>
+            </SectionsContainer>
+        </div>
+      )
+    }}
+    </Auth>
+);
 
 export default IndexPage
