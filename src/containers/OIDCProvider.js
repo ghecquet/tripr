@@ -1,22 +1,22 @@
-// ./src/containers/FirebaseProvider.js
+// ./src/containers/OIDCProvider.js
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class FirebaseProvider extends React.Component {
+class OIDCProvider extends React.Component {
   static propTypes = {
     children: PropTypes.element,
-    firebase: PropTypes.object.isRequired,
+    oidc: PropTypes.object.isRequired,
   };
 
   static childContextTypes = {
-    firebase: PropTypes.object,
+    oidc: PropTypes.object,
   };
 
   getChildContext() {
-    const { firebase } = this.props;
+    const { oidc } = this.props;
 
     return {
-      firebase,
+      oidc,
     };
   }
 
@@ -27,4 +27,4 @@ class FirebaseProvider extends React.Component {
   }
 }
 
-export default FirebaseProvider;
+export default OIDCProvider;

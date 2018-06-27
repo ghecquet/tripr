@@ -16,23 +16,25 @@ class Auth extends React.Component {
   };
 
   static contextTypes = {
-    firebase: PropTypes.object,
+      oidc: PropTypes.object,
   };
 
   state = INITIAL_STATE;
 
   componentDidMount() {
-    const { auth } = this.context.firebase;
-    // onAuthStateChanged returns an unsubscribe method
-    this.stopAuthListener = auth().onAuthStateChanged(user => {
-      if (user) {
-        // if user exists sign-in!
-        this.signIn(user);
-      } else {
-        // otherwise sign-out!
-        this.signOut();
-      }
-    });
+    const { userManager } = this.context.oidc;
+
+    //
+    // // onAuthStateChanged returns an unsubscribe method
+    // this.stopAuthListener = auth().onAuthStateChanged(user => {
+    //   if (user) {
+    //     // if user exists sign-in!
+    //     this.signIn(user);
+    //   } else {
+    //     // otherwise sign-out!
+    //     this.signOut();
+    //   }
+    // });
   }
 
   componentWillUnmount() {
@@ -40,36 +42,41 @@ class Auth extends React.Component {
   }
 
   handleSignIn = provider => {
-    const { auth } = this.context.firebase;
 
-    switch (provider) {
-      // the auth listener will handle the success cases
-      case 'google':
-        return auth()
-          .signInWithPopup(new auth.GoogleAuthProvider())
-          .catch(error => {
-            // eslint-disable-next-line no-console
-            console.error(error);
-            // TODO: notify the user of the error
-            return error;
-          });
+      const { userManager } = this.context.oidc;
 
-      case 'anonymous':
-        return auth()
-          .signInAnonymously()
-          .catch(error => {
-            // eslint-disable-next-line no-console
-            console.error(error);
-            // TODO: notify the user of the error
-            return error;
-          });
-
-      default:
-        const reason = 'Invalid provider passed to signIn method';
-        // eslint-disable-next-line no-console
-        console.error(reason);
-        return Promise.reject(reason);
-    }
+      userManager.signinPopup();
+      
+    // const { auth } = this.context.firebase;
+    //
+    // switch (provider) {
+    //   // the auth listener will handle the success cases
+    //   case 'google':
+    //     return auth()
+    //       .signInWithPopup(new auth.GoogleAuthProvider())
+    //       .catch(error => {
+    //         // eslint-disable-next-line no-console
+    //         console.error(error);
+    //         // TODO: notify the user of the error
+    //         return error;
+    //       });
+    //
+    //   case 'anonymous':
+    //     return auth()
+    //       .signInAnonymously()
+    //       .catch(error => {
+    //         // eslint-disable-next-line no-console
+    //         console.error(error);
+    //         // TODO: notify the user of the error
+    //         return error;
+    //       });
+    //
+    //   default:
+    //     const reason = 'Invalid provider passed to signIn method';
+    //     // eslint-disable-next-line no-console
+    //     console.error(reason);
+    //     return Promise.reject(reason);
+    // }
   };
 
   handleSignOut = () => {

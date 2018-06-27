@@ -1,5 +1,5 @@
 var plugins = [{
-      plugin: require('/Users/ghecquet/go/src/github.com/ghecquet/tripr/gatsby-browser'),
+      plugin: require('/Users/gregory/Sites/tripr/gatsby-browser'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks

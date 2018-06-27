@@ -8,15 +8,15 @@
  /* eslint-disable react/prop-types, import/no-extraneous-dependencies */
 import React from 'react';
 import { Router } from 'react-router-dom';
-import FirebaseProvider from './src/containers/FirebaseProvider';
+import OIDCProvider from './src/containers/OIDCProvider';
 
-import firebase from './src/services/firebase';
+import oidc from './src/services/oidc';
 
 exports.replaceRouterComponent = ({ history }) => {
   const ConnectedRouterWrapper = ({ children }) => (
-    <FirebaseProvider firebase={firebase}>
+    <OIDCProvider oidc={oidc}>
       <Router history={history}>{children}</Router>
-    </FirebaseProvider>
+    </OIDCProvider>
   );
 
   return ConnectedRouterWrapper;

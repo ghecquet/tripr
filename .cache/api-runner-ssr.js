@@ -1,8 +1,8 @@
 var plugins = [{
-      plugin: require('/Users/ghecquet/go/src/github.com/ghecquet/tripr/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/gregory/Sites/tripr/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/ghecquet/go/src/github.com/ghecquet/tripr/plugins/gatsby-plugin-revealjs/gatsby-ssr'),
+      plugin: require('/Users/gregory/Sites/tripr/plugins/gatsby-plugin-revealjs/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

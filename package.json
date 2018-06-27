@@ -4,14 +4,15 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.247",
-    "gatsby-link": "^1.6.40",
+    "gatsby": "^1.9.273",
+    "gatsby-link": "^1.6.45",
     "gatsby-plugin-react-helmet": "^2.0.10",
-    "gatsby-source-filesystem": "^1.5.38",
+    "gatsby-source-filesystem": "^1.5.39",
+    "oidc-client": "^1.5.1",
     "react-burger-menu": "^2.5.2",
     "react-fullpage": "^0.1.18",
     "react-helmet": "^5.2.0",
-    "react-id-swiper": "^1.6.4",
+    "react-id-swiper": "^1.6.6",
     "react-swipe": "^5.1.1",
     "react-transition-group": "^2.3.1",
     "styled-components": "^3.3.3"
@@ -28,7 +29,7 @@
   },
   "devDependencies": {
     "firebase": "^5.1.0",
-    "prettier": "^1.12.0"
+    "prettier": "^1.13.6"
   },
   "repository": {
     "type": "git",
