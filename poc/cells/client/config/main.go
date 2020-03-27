@@ -8,7 +8,7 @@ import (
 	"github.com/coreos/etcd/etcdserver/etcdserverpb"
 	"google.golang.org/grpc"
 
-	_ "github.com/ghecquet/ostau/poc/cells/client/resolver"
+	_ "github.com/ghecquet/tripr/poc/cells/client/resolver"
 )
 
 func main() {

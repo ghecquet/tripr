@@ -7,7 +7,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/ghecquet/ostau/poc/cells/index"
+	"github.com/ghecquet/tripr/poc/cells/index"
 	"github.com/spf13/afero"
 	"google.golang.org/grpc"
 )

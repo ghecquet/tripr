@@ -1,4 +1,4 @@
-module github.com/ghecquet/ostau/poc/cells
+module github.com/ghecquet/tripr/poc/cells
 
 go 1.13
 

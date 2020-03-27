@@ -6,10 +6,10 @@ import (
 	"log"
 	"os"
 
-	"github.com/ghecquet/ostau/poc/cells/index"
+	"github.com/ghecquet/tripr/poc/cells/index"
 	"google.golang.org/grpc"
 
-	_ "github.com/ghecquet/ostau/poc/cells/client/resolver"
+	_ "github.com/ghecquet/tripr/poc/cells/client/resolver"
 )
 
 func main() {
