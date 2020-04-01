@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"log"
 	"net"
-	"os"
 	"time"
 
 	"github.com/ghecquet/tripr/poc/cells/index"
@@ -19,14 +18,14 @@ const (
 
 func main() {
 	base := afero.NewOsFs()
-	cache := afero.NewMemMapFs()
+	// cache := afero.NewMemMapFs()
 
-	// Initial sync
-	afero.Walk(base, "/Library", func(path string, fi os.FileInfo, err error) error {
-		cache.Create(path)
+	// // Initial sync
+	// afero.Walk(base, "/tmp/test1", func(path string, fi os.FileInfo, err error) error {
+	// 	cache.Create(path)
 
-		return nil
-	})
+	// 	return nil
+	// })
 
 	s := grpc.NewServer()
 
@@ -37,7 +36,7 @@ func main() {
 
 	fmt.Println(lis.Addr())
 
-	index.RegisterNodeProviderServer(s, index.NewHandler(cache))
+	index.RegisterFSServer(s, index.NewHandler(base))
 
 	go ping(lis.Addr(), s)
 
@@ -53,7 +52,7 @@ func ping(a net.Addr, s *grpc.Server) {
 	c, err := net.DialUDP("udp", nil, addr)
 	for {
 		for service := range s.GetServiceInfo() {
-			fmt.Println("Ping sent ", a.String()+","+service)
+			//fmt.Println("Ping sent ", a.String()+","+service)
 			c.Write([]byte(a.String() + "," + service))
 		}
 		time.Sleep(1 * time.Second)

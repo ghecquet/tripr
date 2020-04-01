@@ -2,11 +2,14 @@ package index
 
 import (
 	context "context"
-	"fmt"
-	"os"
+	fmt "fmt"
+	"io"
+	"reflect"
 
 	"github.com/spf13/afero"
 )
+
+const CHUNKSIZE = 1024
 
 type Handler struct {
 	fs afero.Fs
@@ -18,18 +21,133 @@ func NewHandler(fs afero.Fs) *Handler {
 	}
 }
 
-func (h *Handler) ReadNode(ctx context.Context, in *ReadNodeRequest) (*ReadNodeResponse, error) {
-	return nil, fmt.Errorf("Not implemented")
+func (h *Handler) Stat(ctx context.Context, in *FileRequest) (*FileInfo, error) {
+
+	fmt.Println("Received a stat request")
+	fi, err := h.fs.Stat(in.GetName())
+	if err != nil {
+		return nil, err
+	}
+
+	return &FileInfo{
+		Name:    fi.Name(),
+		Size:    fi.Size(),
+		Mode:    uint32(fi.Mode()),
+		ModTime: fi.ModTime().Unix(),
+	}, nil
 }
 
-func (h *Handler) ListNodes(in *ListNodesRequest, stream NodeProvider_ListNodesServer) error {
-	afero.Walk(h.fs, "/", func(path string, fi os.FileInfo, err error) error {
-		return stream.Send(&ListNodesResponse{
-			Node: &Node{
-				Path: path,
-			},
-		})
-	})
+func (h *Handler) Open(stream FS_OpenServer) error {
+	var fd afero.File
 
-	return fmt.Errorf("Not implemented")
+	fmt.Println("Received an Open request ")
+
+	for {
+		r, err := stream.Recv()
+
+		if err != nil {
+			fmt.Println("Closed the request ", r, err)
+			break
+		}
+
+		fmt.Println("Received something ", reflect.TypeOf(r.Request))
+
+		switch r.Request.(type) {
+		case *FileRequest_Open:
+			if fd != nil {
+				fd.Close()
+			}
+
+			fd, err = h.fs.Open(r.GetOpen().GetName())
+			if err != nil {
+				return err
+			}
+
+			//  stream.Send(nil)
+
+			defer fd.Close()
+		case *FileRequest_Stat:
+			fi, err := fd.Stat()
+			if err != nil {
+				return err
+			}
+
+			if err := stream.Send(&FileResponse{Response: &FileResponse_FileInfo{FileInfo: &FileInfo{
+				Name:    fi.Name(),
+				Size:    fi.Size(),
+				Mode:    uint32(fi.Mode()),
+				ModTime: fi.ModTime().Unix(),
+			}}}); err != nil {
+				return err
+			}
+		case *FileRequest_Truncate:
+			err := fd.Truncate(r.GetTruncate().GetSize())
+			if err != nil {
+				return err
+			}
+
+			stream.Send(nil)
+		case *FileRequest_Read:
+			b := make([]byte, CHUNKSIZE)
+			n, err := fd.Read(b)
+			if err != nil && err != io.EOF {
+				return err
+			}
+
+			stream.Send(&FileResponse{Response: &FileResponse_Read{Read: &ReadResponse{
+				Content: b[:n],
+			}}})
+		case *FileRequest_ReadAt:
+			b := make([]byte, CHUNKSIZE)
+			n, err := fd.ReadAt(b, r.GetReadAt().GetOffset())
+			if err != nil && err != io.EOF {
+				return err
+			}
+
+			stream.Send(&FileResponse{Response: &FileResponse_Read{Read: &ReadResponse{
+				Content: b[:n],
+			}}})
+		case *FileRequest_Readdir:
+			fis, err := fd.Readdir(int(r.GetReaddir().GetCount()))
+			if err != nil {
+				return err
+			}
+
+			var ret []*FileInfo
+			for _, fi := range fis {
+				ret = append(ret, &FileInfo{
+					Name:    fi.Name(),
+					Size:    fi.Size(),
+					Mode:    uint32(fi.Mode()),
+					ModTime: fi.ModTime().Unix(),
+				})
+			}
+
+			stream.Send(&FileResponse{Response: &FileResponse_Readdir{Readdir: &ReaddirResponse{
+				FileInfo: ret,
+			}}})
+		case *FileRequest_Readdirnames:
+			names, err := fd.Readdirnames(int(r.GetReaddirnames().GetCount()))
+			if err != nil {
+				return err
+			}
+
+			stream.Send(&FileResponse{Response: &FileResponse_Readdirnames{Readdirnames: &ReaddirnamesResponse{
+				Names: names,
+			}}})
+		case *FileRequest_Seek:
+			offset, err := fd.Seek(r.GetSeek().GetOffset(), int(r.GetSeek().GetWhence()))
+			if err != nil {
+				return err
+			}
+
+			stream.Send(&FileResponse{Response: &FileResponse_Seek{Seek: &SeekResponse{
+				Offset: offset,
+			}}})
+			stream.Send(nil)
+
+		}
+	}
+
+	return nil
 }
