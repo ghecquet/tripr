@@ -4,7 +4,7 @@ import (
 	context "context"
 	fmt "fmt"
 	"io"
-	"reflect"
+	"sort"
 
 	"github.com/spf13/afero"
 )
@@ -40,8 +40,6 @@ func (h *Handler) Stat(ctx context.Context, in *FileRequest) (*FileInfo, error) 
 func (h *Handler) Open(stream FS_OpenServer) error {
 	var fd afero.File
 
-	fmt.Println("Received an Open request ")
-
 	for {
 		r, err := stream.Recv()
 
@@ -49,8 +47,6 @@ func (h *Handler) Open(stream FS_OpenServer) error {
 			fmt.Println("Closed the request ", r, err)
 			break
 		}
-
-		fmt.Println("Received something ", reflect.TypeOf(r.Request))
 
 		switch r.Request.(type) {
 		case *FileRequest_Open:
@@ -120,8 +116,11 @@ func (h *Handler) Open(stream FS_OpenServer) error {
 					Size:    fi.Size(),
 					Mode:    uint32(fi.Mode()),
 					ModTime: fi.ModTime().Unix(),
+					IsDir:   fi.IsDir(),
 				})
 			}
+
+			sort.Sort(byName(ret))
 
 			stream.Send(&FileResponse{Response: &FileResponse_Readdir{Readdir: &ReaddirResponse{
 				FileInfo: ret,
@@ -131,6 +130,8 @@ func (h *Handler) Open(stream FS_OpenServer) error {
 			if err != nil {
 				return err
 			}
+
+			sort.Strings(names)
 
 			stream.Send(&FileResponse{Response: &FileResponse_Readdirnames{Readdirnames: &ReaddirnamesResponse{
 				Names: names,

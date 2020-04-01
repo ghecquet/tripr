@@ -3,12 +3,15 @@ module github.com/ghecquet/tripr/poc/cells
 go 1.13
 
 require (
+	bitbucket.org/kardianos/rsync v0.0.0-20180803184522-f15d00b4f8d0
 	github.com/coreos/etcd v3.3.18+incompatible
 	github.com/coreos/go-systemd v0.0.0-20191104093116-d3cd4ed1dbcf // indirect
 	github.com/cpuguy83/go-md2man/v2 v2.0.0 // indirect
-	github.com/gogo/protobuf v1.3.1 // indirect
+	github.com/fatih/color v1.9.0
+	github.com/gogo/protobuf v1.3.1
 	github.com/golang/protobuf v1.3.5
 	github.com/hashicorp/go-version v1.2.0 // indirect
+	github.com/kardianos/rsync v0.0.0-20180803184522-e9ce75088e13
 	github.com/karrick/godirwalk v1.15.5
 	github.com/micro/go-micro v1.18.0 // indirect
 	github.com/micro/go-micro/v2 v2.2.0

@@ -4,6 +4,7 @@ import (
 	context "context"
 	"log"
 	"os"
+	"strings"
 	"syscall"
 	"time"
 
@@ -19,9 +20,11 @@ type Fs struct {
 	cli FSClient
 }
 
-func NewFs() afero.Fs {
+func NewFs(path string) afero.Fs {
+	selector := strings.Split(path, "@")
+
 	// TODO - Need some type of selector
-	conn, err := grpc.Dial("cells:///index.FS", grpc.WithInsecure())
+	conn, err := grpc.Dial("cells:///"+selector[0]+"@index.FS", grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("did not connect: %v", err)
 	}
@@ -30,10 +33,10 @@ func NewFs() afero.Fs {
 	c := NewFSClient(conn)
 	ctx := context.TODO()
 
-	return &Fs{
+	return afero.NewBasePathFs(&Fs{
 		ctx: ctx,
 		cli: c,
-	}
+	}, selector[1])
 }
 
 func (f *Fs) ReadDir(name string) ([]os.FileInfo, error) {
@@ -90,11 +93,11 @@ func (f *Fs) OpenFile(name string, flag int, perm os.FileMode) (afero.File, erro
 	if flag&(os.O_WRONLY|syscall.O_RDWR|os.O_APPEND|os.O_CREATE|os.O_TRUNC) != 0 {
 		return nil, syscall.EPERM
 	}
-	return NewIndexFile(f.ctx, name, f.cli), nil
+	return NewIndexFile(f.ctx, name, f.cli)
 }
 
 func (f *Fs) Open(name string) (afero.File, error) {
-	return NewIndexFile(f.ctx, name, f.cli), nil
+	return NewIndexFile(f.ctx, name, f.cli)
 }
 
 func (f *Fs) Mkdir(n string, p os.FileMode) error {

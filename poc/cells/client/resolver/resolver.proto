@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package resolver;
+
+message Request {
+    oneof request {
+        Service service = 1;
+        DNS dns = 2;
+    }
+}
+message Service {
+    string Addr = 1;
+    string Name = 3;
+}
+
+message DNS {
+    string Name = 1;
+}

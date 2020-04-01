@@ -1,31 +1,30 @@
 package main
 
 import (
-	"fmt"
 	"log"
 	"net"
+	"os"
 	"time"
 
+	"github.com/ghecquet/tripr/poc/cells/client/resolver"
 	"github.com/ghecquet/tripr/poc/cells/index"
+	"github.com/golang/protobuf/proto"
 	"github.com/spf13/afero"
 	"google.golang.org/grpc"
 )
 
 const (
-	srvAddr       = ":8100"
+	srvAddr       = ":0"
 	discoveryAddr = "224.0.0.1:9999"
 )
 
 func main() {
+	// TODO - make that a mandatory argument
+	args := os.Args[1:]
+
+	name := args[0]
+
 	base := afero.NewOsFs()
-	// cache := afero.NewMemMapFs()
-
-	// // Initial sync
-	// afero.Walk(base, "/tmp/test1", func(path string, fi os.FileInfo, err error) error {
-	// 	cache.Create(path)
-
-	// 	return nil
-	// })
 
 	s := grpc.NewServer()
 
@@ -34,16 +33,14 @@ func main() {
 		log.Fatalf("failed to listen: %v", err)
 	}
 
-	fmt.Println(lis.Addr())
-
 	index.RegisterFSServer(s, index.NewHandler(base))
 
-	go ping(lis.Addr(), s)
+	go ping(name, lis.Addr(), s)
 
 	s.Serve(lis)
 }
 
-func ping(a net.Addr, s *grpc.Server) {
+func ping(name string, a net.Addr, s *grpc.Server) {
 	addr, err := net.ResolveUDPAddr("udp", discoveryAddr)
 	if err != nil {
 		log.Fatal(err)
@@ -51,9 +48,12 @@ func ping(a net.Addr, s *grpc.Server) {
 
 	c, err := net.DialUDP("udp", nil, addr)
 	for {
+		data, _ := proto.Marshal(resolver.NewDNS(name))
+		c.Write(data)
+
 		for service := range s.GetServiceInfo() {
-			//fmt.Println("Ping sent ", a.String()+","+service)
-			c.Write([]byte(a.String() + "," + service))
+			data, _ := proto.Marshal(resolver.NewService(a.String(), service))
+			c.Write(data)
 		}
 		time.Sleep(1 * time.Second)
 	}

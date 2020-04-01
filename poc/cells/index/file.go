@@ -19,7 +19,6 @@ import (
 	"io"
 	"os"
 	"syscall"
-	"time"
 
 	"github.com/spf13/afero"
 )
@@ -29,12 +28,11 @@ type File struct {
 	stream FS_OpenClient
 }
 
-type fileInfo struct {
-	*FileInfo
-}
-
-func NewIndexFile(ctx context.Context, name string, cli FSClient) afero.File {
-	stream, _ := cli.Open(ctx)
+func NewIndexFile(ctx context.Context, name string, cli FSClient) (afero.File, error) {
+	stream, err := cli.Open(ctx)
+	if err != nil {
+		return nil, err
+	}
 
 	// Sending initial request to open the file descriptor
 	stream.Send(&FileRequest{
@@ -46,7 +44,7 @@ func NewIndexFile(ctx context.Context, name string, cli FSClient) afero.File {
 	return &File{
 		name:   name,
 		stream: stream,
-	}
+	}, nil
 }
 
 func (f *File) Close() error {
@@ -205,28 +203,4 @@ func (f *File) WriteAt(b []byte, off int64) (n int, err error) {
 
 func (f *File) WriteString(s string) (ret int, err error) {
 	return 0, syscall.EPERM
-}
-
-func (f *fileInfo) IsDir() bool {
-	return f.GetIsDir()
-}
-
-func (f *fileInfo) Name() string {
-	return f.GetName()
-}
-
-func (f *fileInfo) Mode() os.FileMode {
-	return os.FileMode(f.GetMode())
-}
-
-func (f *fileInfo) ModTime() time.Time {
-	return time.Unix(f.GetModTime(), 0)
-}
-
-func (f *fileInfo) Size() int64 {
-	return f.GetSize()
-}
-
-func (f *fileInfo) Sys() interface{} {
-	return nil
 }
