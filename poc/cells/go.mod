@@ -16,8 +16,10 @@ require (
 	github.com/micro/go-micro v1.18.0 // indirect
 	github.com/micro/go-micro/v2 v2.2.0
 	github.com/mwitkow/go-proto-validators v0.3.0 // indirect
+	github.com/pkg/errors v0.9.1
 	github.com/pkg/sftp v1.11.0
 	github.com/pydio/cells v2.0.4+incompatible
+	github.com/rclone/rclone v1.51.0
 	github.com/spf13/afero v1.2.2
 	github.com/stretchr/testify v1.5.1 // indirect
 	go.etcd.io/etcd v3.3.18+incompatible
