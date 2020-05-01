@@ -4,6 +4,13 @@ package index;
 
 service FS{
     rpc Stat(FileRequest) returns (FileInfo);
+    rpc Chtimes(ChtimesRequest) returns (ChtimesResponse);
+    rpc Chmod(ChmodRequest) returns (ChmodResponse); 
+    rpc Mkdir(MkdirRequest) returns (MkdirResponse);
+    rpc MkdirAll(MkdirAllRequest) returns (MkdirAllResponse); 
+    rpc Rename(RenameRequest) returns (RenameResponse);
+    rpc RemoveAll(RemoveAllRequest) returns (RemoveAllResponse);
+    rpc Remove(RemoveRequest) returns (RemoveResponse);
     rpc Open(stream FileRequest) returns (stream FileResponse);
 
 }
@@ -25,8 +32,44 @@ message FileRequest{
     }
 }
 
+message ChtimesRequest {
+    string name = 1;
+    int64 added = 2;
+    int64 modified = 3;
+}
+
+message ChmodRequest {
+    string name = 1;
+    uint32 mode = 2;
+}
+
+message MkdirRequest {
+    string name = 1;
+    uint32 perm = 2;
+}
+
+message MkdirAllRequest {
+    string path = 1;
+    uint32 perm = 2;
+}
+
+message RenameRequest {
+    string oldName = 1;
+    string newName = 2;
+}
+
+message RemoveAllRequest {
+    string path = 1;
+}
+
+message RemoveRequest {
+    string name = 1;
+}
+
 message OpenRequest {
     string name = 1;
+    int64 flag = 2;
+    uint32 fileMode = 3;
 }
 
 message StatRequest {}
@@ -59,9 +102,14 @@ message SeekRequest {
     Whence whence = 2;
 }
 
-message WriteRequest {}
+message WriteRequest {
+    bytes content = 1;
+}
 
-message WriteAtRequest {}
+message WriteAtRequest {
+    int64 offset = 1;
+    bytes content = 2;
+}
 
 // Responses
 message FileInfo{
@@ -72,15 +120,33 @@ message FileInfo{
     bool isDir = 5;
 }
 
+message ChtimesResponse {}
+
+message ChmodResponse {}
+
+message MkdirResponse {}
+
+message MkdirAllResponse {}
+
+message RenameResponse {}
+
+message RemoveAllResponse {}
+
+message RemoveResponse {}
+
 message FileResponse{
     oneof Response {
-        FileInfo fileInfo = 1;
-        ReadResponse read = 2;
-        ReaddirResponse readdir = 3;
-        ReaddirnamesResponse readdirnames = 4;
-        SeekResponse seek = 5;
-        WriteResponse write = 6;
+        OpenResponse open = 1;
+        FileInfo fileInfo = 2;
+        ReadResponse read = 3;
+        ReaddirResponse readdir = 4;
+        ReaddirnamesResponse readdirnames = 5;
+        SeekResponse seek = 6;
+        WriteResponse write = 7;
     }
+}
+
+message OpenResponse {
 }
 
 message ReadResponse {
@@ -100,5 +166,5 @@ message SeekResponse {
 }
 
 message WriteResponse {
-    int32 bytesWritten = 1;
+    int64 bytesWritten = 1;
 }
